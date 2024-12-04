@@ -3,7 +3,7 @@ import './Header.css';
 
 const Header = () => (
   <header>
-    <h1>Mein Weblog</h1>
+    <h1>Aiyoub Weblog</h1>
   </header>
 );
 
