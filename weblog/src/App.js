@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PostList from './components/PostList';
@@ -12,11 +12,11 @@ const App = () => (
   <Router>
     <div className="App">
       <Header />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/posts" exact render={() => <PostList posts={posts} />} />
-        <Route path="/posts/:id" render={() => <PostDetail posts={posts} />} />
-      </Switch>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/posts" exact element={<PostList posts={posts} />} />
+        <Route path="/posts/:id" element={<PostDetail posts={posts} />} />
+      </Routes>
       <Footer />
     </div>
   </Router>
