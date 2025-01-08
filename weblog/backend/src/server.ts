@@ -30,7 +30,7 @@ pool.connect((err, client, done) => {
 // Define a route for the root path ('/')
 app.get('/', (req, res) => {
   // Send a response to the client
-  res.send('Hello, Welcome to Benn weblog');
+  res.send('Hello, Welcome to Aiyoub Reichert weblog');
 });
 
 // Start the server and listen on the specified port
