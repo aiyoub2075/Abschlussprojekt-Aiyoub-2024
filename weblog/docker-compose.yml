@@ -1,7 +1,7 @@
 services:
   db:
     image: postgres:latest
-    container_name: weblog-backend-db
+    container_name: weblog-db
     environment:
       POSTGRES_USER: webloguser
       POSTGRES_PASSWORD: QyfOJs4xwsh6qdlv

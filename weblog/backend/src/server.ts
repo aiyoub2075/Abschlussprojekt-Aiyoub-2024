@@ -23,7 +23,7 @@ pool.connect((err, client, done) => {
   if (err) {
     console.error('Error connecting to the database', err)
   } else {
-    console.log('Sussfully connected to Postgresql');
+    console.log('Successfully connected to Postgresql');
   }
 })
 
