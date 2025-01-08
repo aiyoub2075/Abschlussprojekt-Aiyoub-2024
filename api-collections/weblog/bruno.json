@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "weblog",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
