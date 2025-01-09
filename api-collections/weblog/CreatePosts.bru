@@ -1,0 +1,19 @@
+meta {
+  name: CreatePosts
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5000/posts/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Hello World",
+    "content": "Hello World",
+    "user_id": "18ed9e74-bd66-4581-96a8-529c216bdb0e"
+  }
+}

@@ -5,6 +5,7 @@ import env from 'dotenv';
 import { usersRouter } from './users/UsersRouter';
 import { DbConfig } from './DbConfig';
 import { postsRouter } from './posts/PostsRouter';
+import { commentsRouter } from './comments/CommentsRouter';
 
 env.config();
 
@@ -21,6 +22,7 @@ dbConfig.init();
 const router = Router()
 router.use('/users', usersRouter)
 router.use('/posts', postsRouter)
+router.use('/comments', commentsRouter)
 app.use(router)
 
 app.get('/', (req, res) => {
