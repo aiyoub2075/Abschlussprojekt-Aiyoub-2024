@@ -1,0 +1,18 @@
+meta {
+  name: CreateComments
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:5000/comments/7a827756-ce9e-4702-8cdf-873f7ded0337
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+   "content": "Nice! Post",
+    "userId": "18ed9e74-bd66-4581-96a8-529c216bdb0e"
+  }
+}
