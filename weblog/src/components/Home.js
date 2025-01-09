@@ -1,10 +1,12 @@
 import React from 'react';
+import Post from "./Post";
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-    <p>Willkommen auf meinem Weblog!</p>
-  </div>
+const Home = ({posts}) => (
+    <div>
+        {posts.map(post => (
+            <Post key={post.id} post={post}/>
+        ))}
+    </div>
 );
 
 export default Home;
